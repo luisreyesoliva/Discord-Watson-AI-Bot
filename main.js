@@ -1,5 +1,5 @@
 
-/* Watson Discord BOT
+/* Watson Discord-BOT
   First 3 lines, npm modules imports
   Las primeras 3 lineas importando modulos
 */
