@@ -1,0 +1,22 @@
+# Update <REGISTRY> <NAMESPACE> values before use
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: watson-bot
+  labels:
+    app: watson-bot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: watson-bot
+  template:
+    metadata:
+      labels:
+        app: watson-bot
+    spec:
+      containers:
+      - name: watson-bot
+        image: <NOMBRE-IMAGEN-BOT>
+        ports:
+        - containerPort: 3000
