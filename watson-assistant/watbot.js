@@ -6,11 +6,11 @@ const client = new Discord.Client();
 const AssistantV2 = require('ibm-watson/assistant/v2'); //watson assistant
 const { IamAuthenticator } = require('ibm-watson/auth'); //watson Oauth
 
-const ASSISTANT_ID = '24bd2059-5227-483a-9cdb-cebd1c239083'; //from UI
-const ASSISTANT_URL = 'https://api.eu-de.assistant.watson.cloud.ibm.com/instances/1ce96bd4-c65a-4d03-979d-f6e3ce40b16d'; //service-credentials-blog
-const ASSISTANT_APIKEY = '_ZAMOGZYp8i61Gsb7gIVH8Ia08CQN8DOJVUbyvK4kSwZ'; //service-credentials-blog
+const ASSISTANT_ID = process.env.ASSISTANT_ID; //from UI
+const ASSISTANT_URL = process.env.ASSISTANT_URL; //service-credentials-blog
+const ASSISTANT_APIKEY = process.env.ASSISTANT_APIKEY; //service-credentials-blog
 const ASST_API_VERSION = '2021-06-14'
-const TOKEN = 'OTAwMzE1Mzg1NjE2ODE0MTYw.YW_iCg.qfB7vI0n1N8TgQ82MUCuEHwYLqE';  
+const TOKEN = process.env.TOKEN;  
 
 
 const assistant = new AssistantV2({
