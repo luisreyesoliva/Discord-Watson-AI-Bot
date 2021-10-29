@@ -144,8 +144,11 @@ El archivo "watbot.js" es el que orquesta las funciones del bot, está escrito e
 También verás un Dockerfile que nos permitirá generar la imagen de contenedor con todos los recursos necesarios para poder ejecutar nuestro bot. 
 
 Las funciones inteligentes ya se encuentran programadas, solo debes darle acceso a ellas a través del servicio de Watson Assistant que debes tener creado y configurado previamente, con sus intenciones, entidades y diálogos. 
-Para configurar las conexiones al servicio, abre y modifica el archivo ".env" copiando las credenciales de acceso necesarias (API Keys y Service Url) de tu recurso de Watson Assistant y pegandolas en los campos indicados.
+Para configurar las conexiones al servicio, abre y modifica el archivo ".env_sample" copiando las credenciales de acceso necesarias (API Keys y Service Url) de tu recurso de Watson Assistant y pegandolas en los campos indicados. 
+
 Además, copiar y pega el token de tu bot que se muestra en el paso **1. Registra un nuevo Bot en Discord Developers**, si te queda alguna duda de cómo conseguir estos accesos, consulta la documentación en **Tecnologías**.
+
+Cambia luego el nombre del archivo a "env".
 
 <p align="center">
   <img src="images/env.jpg" width="75%"></img>
