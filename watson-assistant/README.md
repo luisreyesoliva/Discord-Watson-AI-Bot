@@ -13,12 +13,13 @@ También asegurarás que tu bot está siempre activo desplegándolo en un cluste
 - [Discord.js](https://discord.js.org/#/docs/main/stable/general/welcome)
 - [Node.js](https://nodejs.org/en/docs/guides/getting-started-guide/)
 - [Watson Assistant](https://cloud.ibm.com/docs/assistant?topic=assistant-getting-started)
-- [Kubernetes] (https://cloud.ibm.com/docs/containers?topic=containers-getting-started)
+- [Kubernetes](https://cloud.ibm.com/docs/containers?topic=containers-getting-started)
 
 Tiempo estimado: 30 minutos.
 
 ## Prerequisitos
-- Contar con una cuenta de [IBM Cloud](https://cloud.ibm.com/), el plan Lite sirve para este Code Pattern.
+- Contar con una cuenta de [IBM Cloud](https://cloud.ibm.com/)
+- Contar con un cluster de Kubernetes desplegado (la cuenta trial a la que te acceso esta página de registro [Registro IBM Cloud](https://ibm.biz/BdfhcR) te permite crear un cluster de manera gratuita y tenerlo disponible durante 30 días)
 - Contar con una cuenta registrada en la plataforma de [Discord](https://discord.com/), se recomienda tener el programa o la aplicación instalada para más rapida ejecución y debug.
 - Contar con [Node.js](https://nodejs.org/en/download/) instalado en tu máquina, ya sea Linux, Windows o Mac.
 - Contar con [Docker](https://www.docker.com/get-started) instalado en tu maquina, puedes usar también el software de Docker Desktop si es que no tienes muchas experiencia con Docker, aunque para este tutorial no será necesario saber mucho sobre esta tecnología.
@@ -32,7 +33,7 @@ El bot se activa mediante un programa sencillo en Node.js el cual además permit
 ## Flow
 
 <p align="center">
-  <img src="images/flow-diagram.jpg" width="70%"></img>
+  <img src="images/flujo-discord-wa.jpg" width="70%"></img>
 </p>
 
 -	El usuario interactúa con el bot en la plataforma Discord.
@@ -148,7 +149,7 @@ Para configurar las conexiones al servicio, abre y modifica el archivo ".env_sam
 
 Además, copiar y pega el token de tu bot que se muestra en el paso **1. Registra un nuevo Bot en Discord Developers**, si te queda alguna duda de cómo conseguir estos accesos, consulta la documentación en **Tecnologías**.
 
-Cambia luego el nombre del archivo a "env".
+Cambia luego el nombre del archivo a ".env".
 
 <p align="center">
   <img src="images/env.jpg" width="75%"></img>

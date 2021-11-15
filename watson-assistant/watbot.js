@@ -10,7 +10,7 @@ const ASSISTANT_ID = process.env.ASSISTANT_ID; //from UI
 const ASSISTANT_URL = process.env.ASSISTANT_URL; //service-credentials-blog
 const ASSISTANT_APIKEY = process.env.ASSISTANT_APIKEY; //service-credentials-blog
 const ASST_API_VERSION = '2021-06-14'
-const TOKEN = process.env.TOKEN;  
+const TOKEN = process.env.DISCORD_TOKEN;  
 
 
 const assistant = new AssistantV2({
